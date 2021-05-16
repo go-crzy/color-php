@@ -4,7 +4,7 @@ This is a sample project that implement the Color API with PHP/Composer. It
 is useful to demonstrate [go-crzy/crzy](https://github.com/go-crzy/crzy). To
 test the project, we assume you have composer and run on Unix/Linux 
 
-Start by downloading the JUnit 5 console:
+Start by downloading the dependencies:
 
 ```bash
 composer install
