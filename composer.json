@@ -1,0 +1,16 @@
+{
+    "name": "go-crzy/color-php",
+    "description": "A Color API developed with PHP",
+    "type": "project",
+	"scripts": {
+        "phpunit": "vendor/bin/phpunit tests",
+		"start": "nohup php -S localhost:8080 -t public &",
+		"stop": "kill -9 $(ps -ef | grep \"php -[S]\" | awk '{print $2}')",
+		"test": ["@start", "@phpunit", "@stop"]
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.3",
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT"
+}
